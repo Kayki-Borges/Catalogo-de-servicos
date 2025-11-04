@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Funnel Sans", sans-serif;
+}
+
+html {
+    scrollbar-color: #66afbd #f8fafc;
+    scrollbar-width: thin;
+}
+
+
+body {
+    background-image: url(IMG/stacked-waves-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Funnel Sans", sans-serif;
+    height: 100vh;
+    overflow: hidden;  
+}
+
+.cad-principal{
+    background-color: aliceblue;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 10px 10px rgba(128, 128, 128, 0.438);
+}
+
+.cad-principal h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #66afbd;
+    margin-bottom: 10px;
+}
+
+#CadForm {
+    width: 80%;
+    margin-bottom: 2em;
+    margin-top: 5em;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 18px 20px;
+    border: 2px solid rgb(102, 175, 189, 0.2);
+    border-radius: 12px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #66afbd;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input-group input::placeholder {
+    color: #66afbd;
+}
+
+.input-group input:focus {
+    border-color: rgb(102, 175, 189, 0.5);
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.input-group i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #66afbd;
+}
+
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #66afbd;
+    border-radius: 50%;
+    border-top-color: transparent;
+    animation: spin 1s ease-in-out infinite;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 18px;
+    background: white;
+    color: #66afbd;
+    border: 1px solid #66afbd;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    border: 2px solid #66afbd;
+}
+
+.log {
+    width: 400px;
+    padding: 15px;
+    background: transparent;
+    color: #66afbd;
+    border: 2px solid rgb(102, 175, 189, .3);
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.log:hover {
+    border-color: #66afbd;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 1024px) {
+   body {
+    background-image: none;
+   }
+
+   .cad-principal{
+    box-shadow: none;
+    background-color: white;
+   }
+}
+
+@media (max-width: 768px) {
+   body {
+    background-image: none;
+   }
+
+   .cad-principal{
+    box-shadow: none;
+    background-color: white;
+   }
+}
+
+@media (max-width: 480px) {
+    body {
+    background-image: none;
+   }
+
+   .cad-principal{
+    box-shadow: none;
+    background-color: white;
+   }
+}

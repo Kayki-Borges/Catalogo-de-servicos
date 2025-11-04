@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+        *  {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Funnel Sans", sans-serif;
+        }
+
+        html {
+            scrollbar-color: #66afbd #f8fafc;
+            scrollbar-width: thin;
+        }
+
+
+        body {
+            font-family: "Funnel Sans", sans-serif;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        main {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Lado Esquerdo - Formulário */
+        .lad-1 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 80px;
+            background: #f4f4f4;
+            color: black;
+            position: relative;
+            min-width: 400px;
+        }
+
+        .lad-1::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .login-content {
+            position: relative;
+            z-index: 2;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .lad-1 h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .lad-1 .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .input-group {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 18px 20px;
+            border: 2px solid rgb(102, 175, 189, 0.2);
+            border-radius: 12px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: #66afbd;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            outline: none;
+        }
+
+        .input-group input::placeholder {
+            color: #66afbd;
+        }
+
+        .input-group input:focus {
+            border-color: rgb(102, 175, 189, 0.5);
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .input-group i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #66afbd;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .remember input {
+            width: 16px;
+            height: 16px;
+            accent-color: #66afbd;
+        }
+
+        .forgot {
+            color: #66afbd;
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .forgot:hover {
+            opacity: 1;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 18px;
+            background: white;
+            color: #66afbd;
+            border: 1px solid #66afbd;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button[type="submit"]:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            border: 2px solid #66afbd;
+        }
+
+        .cad {
+            width: 100%;
+            padding: 15px;
+            background: transparent;
+            color: #66afbd;
+            border: 2px solid rgb(102, 175, 189, .3);
+            border-radius: 12px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .cad:hover {
+            border-color: #66afbd;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Lado Direito - Visual */
+        .lad-2 {
+            flex: 1;
+            background: url(IMG/stacked-waves-haikei.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            min-width: 400px;
+        }
+
+        .lad-2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        }
+
+        .visual-content {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+            padding: 0 60px;
+            max-width: 500px;
+        }
+
+        .visual-content h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: white;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .visual-content p {
+            font-size: 1.5rem;
+            color: white;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: rgba(102, 126, 234, 0.05);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.484);
+            background-color: rgba(255, 255, 255, 0.384);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateX(10px);
+            border: 1.5px solid rgba(255, 255, 255  );
+            background-color: rgba(255, 255, 255, 0.384);
+        }
+
+        .feature i {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .feature-text h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: white;
+        }
+
+        .feature-text p {
+            font-size: 0.9rem;
+            color: white;
+            margin: 0;
+        }
+
+        /* Animações */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #66afbd;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Responsividade */
+        @media (max-width: 1024px) {
+            .lad-1 {
+                padding: 0 40px;
+            }
+            
+            .visual-content {
+                padding: 0 40px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            
+            .lad-1{
+                min-width: 100%;
+                height: 50vh;
+            }
+            
+            .lad-1 {
+                padding: 40px;
+            }
+
+             .lad-2 {
+                display: none;
+             }
+            
+            .login-content {
+                max-width: 100%;
+            }
+            
+            .visual-content {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .lad-1 {
+                padding: 30px;
+            }
+            
+            .lad-1 h1 {
+                font-size: 2.5rem;
+            }
+            
+            .visual-content h2 {
+                font-size: 2rem;
+            }
+            
+            .options {
+                flex-direction: column;
+                gap: 15px;
+                align-items: flex-start;
+            }
+        }

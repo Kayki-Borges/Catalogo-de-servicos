@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <link rel="stylesheet" href="CSS/config.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de Serviços da Universidade Federal do Cariri - UFCA">
+    <title>Catálogo de Serviços - Configurações</title>
+    
+    <!-- Otimização: Pré-conexão e carregamento otimizado de recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- Otimização: Favicon em múltiplos formatos -->
+    <link rel="icon" href="CSS/IMG/Brasão_UFCA_em_Alta_Definição.svg" type="image/svg+xml">
+    <link rel="icon" href="CSS/IMG/favicon.ico" sizes="any">    
+    
+    <!-- Carregamento não crítico de fontes e ícones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Fallback-->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </noscript>
+</head>
+<body>
+      <div class="container">
+        <!-- Barra lateral com menu de navegação -->
+        <!-- Barra lateral com menu de navegação -->
+<aside class="sidebar">
+    <div class="sidebar-header">
+        <h2>Configurações</h2>
+        <button class="sidebar-close">
+            <i class="bi bi-x-lg"></i>
+        </button>
+    </div>
+    <ul class="sidebar-menu">
+        <li><a href="#" class="active" data-section="general">
+            <i class="bi bi-gear"></i> Geral
+        </a></li>
+        <li><a href="#" data-section="account">
+            <i class="bi bi-person"></i> Conta
+        </a></li>
+        <li><a href="#" data-section="privacy">
+            <i class="bi bi-shield-lock"></i> Privacidade
+        </a></li>
+        <li><a href="#" data-section="notifications">
+            <i class="bi bi-bell"></i> Notificações
+        </a></li>
+        <li><a href="#" data-section="appearance">
+            <i class="bi bi-palette"></i> Aparência
+        </a></li>
+        <li><a href="#" data-section="language">
+            <i class="bi bi-translate"></i> Idioma
+        </a></li>
+        <li><a href="#" data-section="about">
+            <i class="bi bi-info-circle"></i> Sobre
+        </a></li>
+
+        <!-- Botão de voltar corrigido -->
+        <li class="sidebar-back-item">
+            <a href="princi-log.html" class="sidebar-back" id="back-button">
+                <i class="bi bi-arrow-left"></i> Voltar para o Site
+            </a>
+        </li>
+    </ul>
+</aside>
+
+<!-- Conteúdo principal -->
+<main class="main-content">
+    <div class="header">
+        <button class="hamburger">
+            <i class="bi bi-list"></i>
+        </button>
+        <h1 id="section-title">Configurações Gerais</h1>
+        <div class="user-info">
+            <div class="user-avatar">JS</div>
+            <span>João Silva</span>
+        </div>
+    </div>
+
+            <!-- Seção de Configurações Gerais -->
+            <section id="general" class="settings-section active">
+                <div class="section-header">
+                    <h2>Configurações Gerais</h2>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label for="username">Nome de usuário</label>
+                        <input type="text" id="username" class="form-control" value="joaosilva">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" class="form-control" value="joao.silva@exemplo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="timezone">Fuso horário</label>
+                        <div class="select-group">
+                            <select id="timezone" class="form-control">
+                                <option value="-3">Brasília (UTC-3)</option>
+                                <option value="-4">Manaus (UTC-4)</option>
+                                <option value="-5">Acre (UTC-5)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Configurações de privacidade</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="profile-public" checked>
+                            <label for="profile-public">Perfil público</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="show-email" checked>
+                            <label for="show-email">Mostrar e-mail no perfil</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">Cancelar</button>
+                    <button class="btn btn-success" id="save-general">Salvar Alterações</button>
+                </div>
+            </section>
+
+            <!-- Seção de Configurações da Conta -->
+            <section id="account" class="settings-section">
+                <div class="section-header">
+                    <h2>Configurações da Conta</h2>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label for="current-password">Senha atual</label>
+                        <input type="password" id="current-password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">Nova senha</label>
+                        <input type="password" id="new-password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirmar nova senha</label>
+                        <input type="password" id="confirm-password" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Excluir conta</label>
+                        <p style="margin-bottom: 15px; color: var(--cor-secundaria);">Uma vez excluída, sua conta não poderá ser recuperada.</p>
+                        <button class="btn btn-danger">Excluir Conta</button>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">Cancelar</button>
+                    <button class="btn btn-success" id="save-account">Salvar Alterações</button>
+                </div>
+            </section>
+
+            <!-- Seção de Configurações de Privacidade -->
+            <section id="privacy" class="settings-section">
+                <div class="section-header">
+                    <h2>Configurações de Privacidade</h2>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Quem pode ver suas informações</label>
+                        <div class="radio-group">
+                            <input type="radio" id="privacy-public" name="privacy" checked>
+                            <label for="privacy-public">Público</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="privacy-friends" name="privacy">
+                            <label for="privacy-friends">Apenas amigos</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="privacy-private" name="privacy">
+                            <label for="privacy-private">Privado</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Atividade</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="activity-status" checked>
+                            <label for="activity-status">Mostrar status de atividade</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="last-seen" checked>
+                            <label for="last-seen">Mostrar última vez online</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Bloqueio de usuários</label>
+                        <div class="form-control" style="padding: 15px;">
+                            <p style="margin-bottom: 10px;">Você não tem usuários bloqueados.</p>
+                            <button class="btn btn-secondary">Gerenciar usuários bloqueados</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">Cancelar</button>
+                    <button class="btn btn-success" id="save-privacy">Salvar Alterações</button>
+                </div>
+            </section>
+
+            <!-- Seção de Configurações de Notificações -->
+            <section id="notifications" class="settings-section">
+                <div class="section-header">
+                    <h2>Configurações de Notificações</h2>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Notificações por e-mail</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="email-notifications" checked>
+                            <label for="email-notifications">Receber notificações por e-mail</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Notificações no navegador</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="browser-notifications" checked>
+                            <label for="browser-notifications">Permitir notificações no navegador</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipos de notificações</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notify-messages" checked>
+                            <label for="notify-messages">Novas mensagens</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notify-friend-requests" checked>
+                            <label for="notify-friend-requests">Solicitações de amizade</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notify-comments">
+                            <label for="notify-comments">Comentários em publicações</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notify-updates" checked>
+                            <label for="notify-updates">Atualizações do sistema</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">Cancelar</button>
+                    <button class="btn btn-success" id="save-notifications">Salvar Alterações</button>
+                </div>
+            </section>
+
+            <!-- Seção de Configurações de Aparência -->
+            <section id="appearance" class="settings-section">
+                <div class="section-header">
+                    <h2>Configurações de Aparência</h2>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Tema</label>
+                        <div class="radio-group">
+                            <input type="radio" id="theme-light" name="theme" checked>
+                            <label for="theme-light">Claro</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="theme-dark" name="theme">
+                            <label for="theme-dark">Escuro</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="theme-auto" name="theme">
+                            <label for="theme-auto">Automático (segue o sistema)</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Cor de destaque</label>
+                        <div class="theme-options">
+                            <div class="theme-option theme-light active" data-color="light"></div>
+                            <div class="theme-option theme-dark" data-color="dark"></div>
+                            <div class="theme-option theme-blue" data-color="blue"></div>
+                            <div class="theme-option theme-green" data-color="green"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="font-size">Tamanho da fonte</label>
+                        <input type="range" id="font-size" min="12" max="24" value="16" class="form-control">
+                        <div style="display: flex; justify-content: space-between; margin-top: 5px;">
+                            <span>Pequeno</span>
+                            <span>Médio</span>
+                            <span>Grande</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Configurações de densidade</label>
+                        <div class="radio-group">
+                            <input type="radio" id="density-comfortable" name="density" checked>
+                            <label for="density-comfortable">Confortável</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="density-compact" name="density">
+                            <label for="density-compact">Compacto</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">Cancelar</button>
+                    <button class="btn btn-success" id="save-appearance">Salvar Alterações</button>
+                </div>
+            </section>
+
+            <!-- Seção de Configurações de Idioma -->
+            <section id="language" class="settings-section">
+                <div class="section-header">
+                    <h2>Configurações de Idioma</h2>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label for="language-select">Idioma de exibição</label>
+                        <div class="select-group">
+                            <select id="language-select" class="form-control">
+                                <option value="pt-BR" selected>Português (Brasil)</option>
+                                <option value="en-US">English (US)</option>
+                                <option value="es-ES">Español</option>
+                                <option value="fr-FR">Français</option>
+                                <option value="de-DE">Deutsch</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-format">Formato de data</label>
+                        <div class="select-group">
+                            <select id="date-format" class="form-control">
+                                <option value="dd/mm/yyyy" selected>DD/MM/AAAA</option>
+                                <option value="mm/dd/yyyy">MM/DD/AAAA</option>
+                                <option value="yyyy-mm-dd">AAAA-MM-DD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="time-format">Formato de hora</label>
+                        <div class="radio-group">
+                            <input type="radio" id="time-format-12" name="time-format" checked>
+                            <label for="time-format-12">12 horas (AM/PM)</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="time-format-24" name="time-format">
+                            <label for="time-format-24">24 horas</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="currency">Moeda</label>
+                        <div class="select-group">
+                            <select id="currency" class="form-control">
+                                <option value="BRL" selected>Real brasileiro (R$)</option>
+                                <option value="USD">Dólar americano ($)</option>
+                                <option value="EUR">Euro (€)</option>
+                                <option value="GBP">Libra esterlina (£)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-secondary">Cancelar</button>
+                    <button class="btn btn-success" id="save-language">Salvar Alterações</button>
+                </div>
+            </section>
+
+            <!-- Seção Sobre o Sistema -->
+            <section id="about" class="settings-section">
+                <div class="section-header">
+                    <h2>Sobre o Sistema</h2>
+                </div>
+                <div class="section-content">
+                    <div class="form-group">
+                        <label>Versão</label>
+                        <p>v2.5.1</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Última atualização</label>
+                        <p>15 de outubro de 2023</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Termos de uso</label>
+                        <p>Leia nossos <a href="#" style="color: var(--cor-primaria);">termos de uso</a> e <a href="#" style="color: var(--cor-primaria);">política de privacidade</a>.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Suporte</label>
+                        <p>Entre em contato com nossa equipe de suporte em <a href="mailto:support@exemplo.com" style="color: var(--cor-primaria);">support@exemplo.com</a>.</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Verificar atualizações</label>
+                        <button class="btn btn-secondary">Verificar Agora</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Notificação Toast -->
+    <div class="toast" id="toast">Configurações salvas com sucesso!</div>
+        <script src="JS/config.js"></script>
+</body>
+</html>

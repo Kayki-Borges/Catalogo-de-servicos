@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+     <link rel="icon" href="CSS/IMG/Brasão_UFCA_em_Alta_Definição.svg">
+    <link rel="stylesheet" href="CSS/login-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de serviços - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <main>
+        <!-- Lado Esquerdo - Formulário de Login -->
+        <div class="lad-1">
+            <div class="login-content">
+                <h1>Login</h1>
+                <p class="subtitle">Acesse sua conta para continuar</p>
+                
+                <form id="loginForm">
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Digite seu email de acesso..." required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Digite sua senha de acesso..." required>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    
+                    <div class="options">
+                        <label class="remember">
+                            <input type="checkbox" id="remember">
+                            Lembrar-me
+                        </label>
+                        <a href="#" class="forgot">Esqueceu a senha?</a>
+                    </div>
+                    
+                    <button type="submit" id="submitBtn">
+                        <span id="btnText">Acessar</span>
+                        <div class="loading" id="loading" style="display: none;"></div>
+                    </button>
+                </form>
+                
+                <a href="cadastro.html"><button class="cad">
+                    Não possui acesso? <strong>Cadastre-se agora</strong>
+                </button></a>
+            </div>
+        </div>
+        
+        <!-- Lado Direito - Visual -->
+        <div class="lad-2">
+            <div class="visual-content floating">
+                <h2>Bem-vindo ao</h2>
+                <p>Catálogo de serviços da <strong>UFCA</strong></p>
+                
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-rocket"></i>
+                        <div class="feature-text">
+                            <h3>Performance Incrível</h3>
+                            <p>Velocidade e eficiência em todas as operações</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="feature-text">
+                            <h3>Segurança Máxima</h3>
+                            <p>Seus dados protegidos com criptografia avançada</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-sync-alt"></i>
+                        <div class="feature-text">
+                            <h3>Sincronização em Tempo Real</h3>
+                            <p>Todas as suas informações atualizadas instantaneamente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="JS/Validador.js"></script>
+</body>
+</html>

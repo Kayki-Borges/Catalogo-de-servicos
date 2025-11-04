@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+     <link rel="icon" href="CSS/IMG/Brasão_UFCA_em_Alta_Definição.svg">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/cad-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de serviços - Cadastro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!--Cadastro Principal-->
+    <div class="cad-principal">
+
+            <h1>Cadastro</h1>
+
+        <form id="CadForm">
+
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Digite seu email de acesso..." required>
+                <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Digite sua senha de acesso..." required>
+                <i class="fas fa-lock"></i>
+            </div>
+
+            <button type="submit" id="submitBtn">
+                <span id="btnText">Acessar</span>
+                <div class="loading" id="loading" style="display: none;"></div>
+            </button>
+        </form>
+
+        <a href="login.html"><button class="log">
+            Possui acesso? <strong>Faça login agora!</strong>
+        </button></a>
+    </div>
+
+    <script src="JS/ValidadorCad.js"></script>
+</body>
+</html>

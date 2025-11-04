@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de Serviços da Universidade Federal do Cariri - UFCA">
+    <title>Catálogo de Serviços UFCA</title>
+    
+    <!-- Otimização: Pré-conexão e carregamento otimizado de recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    
+    <!-- Otimização: Favicon em múltiplos formatos -->
+    <link rel="icon" href="CSS/IMG/Brasão_UFCA_em_Alta_Definição.svg" type="image/svg+xml">
+    <link rel="icon" href="CSS/IMG/favicon.ico" sizes="any">    
+    
+    <!-- Carregamento não crítico de fontes e ícones -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" media="print" onload="this.media='all'">
+    
+    <!-- Fallback-->
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    </noscript>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="https://www.ufca.edu.br/"><img src="CSS/IMG/UFCA-Logo.png" alt="UFCA-Logo"></a>
+            <a href="/" class="logo">
+                Catálogo de Serviços
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Serviços</a>
+                </li>   
+                <a href="login.html"><button class="but-nav" id="log">Entrar</button></a>
+                <a href="cadastro.html"><button class="but-nav" dir="cad">Cadastrar</button></a>
+            </ul>
+
+            <button class="hamburger">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal-->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Bem vindo(a)</h1>
+            <p>ao catálogo de serviços da <span>UFCA</span></p>
+            <a href="#about" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Sobre-->
+    <section class="section" id="about">
+        <div class="text">
+        <p>O Catálogo de serviços da UFCA foi feito para armazenar todos os serviços de todos os setores da UFCA que estão dispóniveis atualmente, mantendo os serviços disponíveis sempre atualizados de forma rápida e segura.</p>
+        <h2>Sobre Nós</h2>
+        </div>
+    </section>
+
+    <!-- Serviços-->
+   <section class="section-2" id="services">
+    <div class="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="bi bi-cloud"></i>
+                    <p>Armazenamento em nuvem</p>
+                </div>
+                <div class="card-back">
+                    <h3>Armazenamento em nuvem</h3>
+                    <p>Armazene seus serviços com segurança na nuvem em nosso site.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="bi bi-phone"></i>
+                    <p>Acesso em qualquer lugar</p>
+                </div>
+                <div class="card-back">
+                    <h3>Acesso Multiplataforma</h3>
+                    <p>Acesse seus serviços de qualquer dispositivo, a qualquer hora.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <i class="bi bi-archive"></i>
+                    <p>Todos os serviços de forma organizada</p>
+                </div>
+                <div class="card-back">
+                    <h3>Organização Inteligente</h3>
+                    <p>Sistema de categorização automática e busca avançada para encontrar tudo rapidamente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer/Rodapé-->
+    <footer>
+        <div class="inform">
+            <div class="inf-1">
+                <h3>Transparência ativa</h3>
+                <a href="https://www.ufca.edu.br/instituicao/administrativo/estrutura-organizacional/pro-reitorias/proplan/avaliacao-institucional-da-ufca/">Avaliação Institucional da UFCA</a>
+                <a href="https://www.ufca.edu.br/instituicao/servicos/">Carta de serviços ao cidadão</a>
+                <a href="https://centralpaineis.cgu.gov.br/visualizar/resolveu">Painel Resolveu?</a>
+                <a href="https://falabr.cgu.gov.br/web/home">Plataforma Fala.BR</a>
+                <a href="https://portaldatransparencia.gov.br/">Portal da transparência</a>
+                <a href="https://www.ufca.edu.br/instituicao/administrativo/estrutura-organizacional/pro-reitorias/proplan/ufca-sustentavel/">UFCA Sustentável</a>
+            </div>
+            <div class="esp"></div>
+            <div class="inf-2">
+                <h3>Serviços</h3>
+                <a href="https://www.ufca.edu.br/assuntos-estudantis/">Assuntos Estudantis</a>
+                <a href="https://www.ufca.edu.br/instituicao/servicos/bibliotecas/">Bibliotecas</a>
+                <a href="https://www.ufca.edu.br/instituicao/servicos/gestao-de-pessoas/">Gestão de Pessoas</a>
+                <a href="https://www.ufca.edu.br/instituicao/administrativo/estrutura-organizacional/pro-reitorias/proad/licitacoes/">Licitações</a>
+                <a href="https://www.ufca.edu.br/noticias/informe_category/reitoria-informa/">Reitoria Informa</a>
+                <a href="https://www.ufca.edu.br/instituicao/servicos/tecnologia-da-informacao/">Tecnologia da Informação</a>
+                <a href="https://www.ufca.edu.br/instituicao/administrativo/estrutura-organizacional/pro-reitorias/prograd/visitas-guiadas/">Visitas Guiadas</a>
+                <a href="#">Webmail</a>
+            </div>
+            <div class="esp"></div>
+            <div class="inf-3">
+                <h3>Universidade Federal do Cariri</h3>
+                <p>Av. Tenente Raimundo Rocha Nº 1639</p>
+                <p>Bairro Cidade Universitária</p>
+                <p>Juazeiro do Norte - Ceará</p>
+                <p>CEP 63048-080</p>
+                <p>+55 (88) 3221 9200</p>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/hamburguer.js"></script>    
+</body>
+</html>     
